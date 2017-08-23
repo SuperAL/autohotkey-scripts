@@ -14,6 +14,18 @@ Return
 Send, npm run build
 Return
 
+:*:[gl::
+Send, git clone
+Return
+
+:*:[gp::
+Send, git pull
+Return
+
+:*:[gs::
+Send, git push
+Return
+
 :*:[ga::
 Send, git add .
 Return
@@ -22,6 +34,3 @@ Return
 Send, git commit -m
 Return
 
-:*:[gca::
-Send, git commit -am
-Return
