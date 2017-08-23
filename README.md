@@ -9,6 +9,8 @@ Repository for saving my .ahk files.
 
 > if download Installer, install it; if `.zip`, just unzip it.
 
+> if you run into any problem or question, you can just find the answer in the `AutoHotkey.chm` file after you install the AutoHotkey or unzip the .zip file.
+
 ### Step 2
 **Download `alex.ahk`, then double-click it (it will run the script)**
 
