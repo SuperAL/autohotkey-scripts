@@ -6,31 +6,37 @@ Return
 Send, docsify serve docs
 Return
 
-:*:[rd::
+;run npm scripts
+:*:rd::
 Send, npm run dev
 Return
 
-:*:[rb::
+:*:rb::
 Send, npm run build
 Return
 
-:*:[gl::
+;git commands
+:*:gl::
 Send, git clone
 Return
 
-:*:[gp::
+:*:gp::
 Send, git pull
 Return
 
-:*:[gs::
+:*:gs::
 Send, git push
 Return
 
-:*:[ga::
+:*:gga::
 Send, git add .
 Return
 
-:*:[gc::
+:*:gc::
 Send, git commit -m
 Return
 
+;css snippets
+:*:..b::
+Send, border: 1px solid
+Return
