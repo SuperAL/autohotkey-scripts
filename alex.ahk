@@ -24,8 +24,12 @@ Return
 Send, git pull
 Return
 
-:*:gs::
+:*:gh::
 Send, git push
+Return
+
+:*:gs::
+Send, git status
 Return
 
 :*:gga::
@@ -33,10 +37,15 @@ Send, git add .
 Return
 
 :*:gc::
-Send, git commit -m
+Send, git commit -m '
+Return
+
+:*:gac::
+Send, git commit -am '
 Return
 
 ;css snippets
 :*:..b::
 Send, border: 1px solid
 Return
+
