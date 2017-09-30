@@ -1,7 +1,7 @@
 # autohotkey-scripts
 Repository for saving my .ahk files.
 
-## How To Use It In One Minute
+## How To Use It In 30 Seconds
 ### Step 1
 **Download AutoHotkey Installer or .zip**
 
