@@ -119,7 +119,7 @@ return
 
 getNow()
 {
-	FormatTime, NowDateTime,, yyyy-MM-dd HH:mm:ss  ; 定义时间的显示格式为 `yyyy-MM-dd HH:mm:ss`，可以随意修改
+	FormatTime, NowDateTime,, yyyy-MM-d dddd HH:mm:ss  ; 定义时间的显示格式为 `yyyy-MM-d dddd HH:mm:ss` => `2017-09-30 星期六 14:37:47`，可以随意修改
 	send, %NowDateTime%
 }
 

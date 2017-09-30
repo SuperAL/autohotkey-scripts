@@ -1,3 +1,5 @@
+[English Readme](https://github.com/SuperAL/autohotkey-scripts/blob/master/README-en.md)
+
 # autohotkey-scripts
 用来存放我的 `.ahk` 文件的仓库。
 
@@ -61,6 +63,7 @@ FastInput(FastWord)
 }
 ```
 > **注意**：如果发现输出的中文短语是乱码的话，就将 `.ahk` 文件保存为 `UTF-8 with BOM` 格式。在 sublime 编辑中你可以这样做： `File` -> `Save With Encoding` -> `UTF-8 with BOM`。
+![文件保存格式](https://github.com/SuperAL/autohotkey-scripts/raw/master/readme/encoding.png)
 
 **其他功能**
 
@@ -85,7 +88,7 @@ return
 
 getNow()
 {
-	FormatTime, NowDateTime,, yyyy-MM-dd HH:mm:ss  ; 定义时间的显示格式为 `yyyy-MM-dd HH:mm:ss`，可以随意修改
+	FormatTime, NowDateTime,, yyyy-MM-dd HH:mm:ss  ; 定义时间的显示格式为 `yyyy-MM-d dddd HH:mm:ss` => `2017-09-30 星期六 14:37:47`，可以随意修改
 	send, %NowDateTime%
 }
 ```
