@@ -41,7 +41,7 @@ Send, git status
 Return
 
 :*:gga::
-Send, git add .
+Send, git add .{Enter}
 Return
 
 :*:gc::
@@ -60,16 +60,25 @@ Return
 Send, git stash pop
 Return
 
+:*:g-::
+Send, git log -1{Enter}
+Return
+
+:*:g1::
+Send, git stash && git pull && git stash pop{Enter}
+Return
+
 ; -------------------------------------------------------------------------
 
 ; 查看 ipconfig
 :*:iip::
-Send, ipconfig
+Send, ipconfig{Enter}
 Return
 
 ; 在文件资源管理器中打开当前目录（ win ）
 :*:ee::
-Send, explorer .
+; 表示输入 explorer . 并按下 Enter 键
+Send, explorer .{Enter}
 Return
 
 ; -------------------------------------------------------------------------
@@ -81,6 +90,10 @@ Return
 
 :*:ff::
 Send, false
+Return
+
+:*:rr::
+Send, return
 Return
 
 :*:[l::
