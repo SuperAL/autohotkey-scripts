@@ -1,25 +1,36 @@
 ﻿; browsersync 本地服务器启动命令
 :*:[b::  ; 按下快捷键组合： `[` 和 `b`
-Send, browser-sync start --server --files "**" ; 它会自动帮你输入 `browser-sync start --server --files`
+Send, browser-sync start --server --files "**"{Enter} ; 它会自动帮你输入 `browser-sync start --server --files`
 Return
 
 ; docsify 本地服务器启动命令
 :*:[d::  ; 按下快捷键组合： `[` 和 `d`
-Send, docsify serve docs ; 它会自动帮你输入 `docsify serve docs`
+Send, docsify serve docs{Enter} ; 它会自动帮你输入 `docsify serve docs`
 Return
 
 ; -------------------------------------------------------------------------
 
 ; 执行 npm scripts
 ; dev: 启动开发模式
-; build: 启动构建模式
 :*:rd::
-Send, npm run dev
+Send, npm run dev{Enter}
 Return
 
+; build: 启动构建模式
 :*:rb::
 Send, npm run build
 Return
+
+; build --report: 启动构建模式，构建完成后生成打包的可视化报告
+:*:rr::
+Send, npm run build --report{Enter}
+Return
+
+; start: 运行 Electron 项目
+:*:rs::
+Send, npm run start{Enter}
+Return
+
 
 ; -------------------------------------------------------------------------
 
@@ -79,6 +90,10 @@ Return
 :*:ee::
 ; 表示输入 explorer . 并按下 Enter 键
 Send, explorer .{Enter}
+Return
+
+:*:ed::
+Send, explorer dist{Enter}
 Return
 
 ; -------------------------------------------------------------------------
